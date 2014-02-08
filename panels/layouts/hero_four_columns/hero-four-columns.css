@@ -1,0 +1,79 @@
+.panel-display--hero-four-column {
+  *zoom: 1;
+}
+.panel-display--hero-four-column:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.panel-display--hero-four-column .panels-region--columns-wrapper {
+  *zoom: 1;
+  clear: both;
+}
+.panel-display--hero-four-column .panels-region--columns-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 44em) {
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-one {
+    width: 48.93617%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-two {
+    width: 48.93617%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-three {
+    width: 48.93617%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: both;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-four {
+    width: 48.93617%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 70em) {
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-one {
+    width: 23.40426%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-two {
+    width: 23.40426%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.53191%;
+    clear: none;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-three {
+    width: 23.40426%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.06383%;
+    clear: none;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-four {
+    width: 23.40426%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
