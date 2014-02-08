@@ -1,0 +1,4 @@
+name = Responsive Panels Layouts
+description = A collection of Compass/Sass driven Panels layouts for responsive content
+core = 7.x
+dependencies[] = panels

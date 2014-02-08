@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Responsive panels layouts
+ */
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function responsive_panels_layouts_ctools_plugin_directory($module, $plugin) {
+  return 'panels/' . $plugin;
+}
