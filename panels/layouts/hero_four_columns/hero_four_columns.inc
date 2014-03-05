@@ -9,7 +9,7 @@
 // Plugin definition
 $plugin = array(
   'title' => t('Hero, 4 columns'),
-  'icon' => '../../icon.png',
+  'icon' => 'hero_four_columns.png',
   'category' => 'Responsive Layouts',
   'theme' => 'hero_four_columns',
   'css' => 'hero-four-columns.css',
