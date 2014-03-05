@@ -16,19 +16,25 @@
 
 @include breakpoint($tab, true) {
   .panel-display--hero-four-column {
-    .panels-region--columns-wrapper {
-      .panels-region--column-one {
-        @include grid-span(6, 1);
+    .panels-region--columns-wrapper__two,
+    .panels-region--columns-wrapper__four {
+      @include layout(4) {
+        .panels-region {
+          @include float-span(2);
+          &:last-child {
+            @include float-span(2, 'last');
+          }
+        }
       }
-      .panels-region--column-two {
-        @include grid-span(6, 7);
-      }
-      .panels-region--column-three {
-        @include grid-span(6, 1);
-        clear: both;
-      }
-      .panels-region--column-four {
-        @include grid-span(6, 7);
+    }
+    .panels-region--columns-wrapper__three {
+      @include layout(9) {
+        .panels-region {
+          @include float-span(3);
+          &:last-child {
+            @include float-span(3, 'last');
+          }
+        }
       }
     }
   }
@@ -36,18 +42,14 @@
 
 @include breakpoint($desk, true) {
   .panel-display--hero-four-column {
-    .panels-region--columns-wrapper {
-      .panels-region--column-one {
-        @include grid-span(3, 1);
-      }
-      .panels-region--column-two {
-        @include grid-span(3, 4);
-      }
-      .panels-region--column-three {
-        @include grid-span(3, 7);
-      }
-      .panels-region--column-four {
-        @include grid-span(3, 10);
+    .panels-region--columns-wrapper__four {
+      @include layout(8) {
+        .panels-region {
+          @include float-span(2);
+          &:last-child {
+            @include float-span(2, 'last');
+          }
+        }
       }
     }
   }

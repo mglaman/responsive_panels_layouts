@@ -9,32 +9,19 @@
  * panel of the layout. This layout supports the following sections:
  */
 ?>
-<div class="panel-display panel-display--hero-four-column">
+<div<?php print $attributes ?>>
   <?php if (!empty($content['hero'])): ?>
-  <div class="panels-region--hero">
+  <div<?php print drupal_attributes($region_attributes_array['hero'])?>>
     <?php print $content['hero']; ?>
   </div>
   <?php endif; ?>
-  <div class="panels-region--columns-wrapper">
-    <?php if (!empty($content['column_one'])): ?>
-    <div class="panels-region--column-one">
-      <?php print $content['column_one']; ?>
-    </div>
+  <div<?php print drupal_attributes($wrapper_attributes_array)?>>
+  <?php foreach(array_intersect_key(array_slice($content, 1), $layout['regions']) as $name => $item): ?>
+    <?php if (!empty($item)): ?>
+      <div<?php print drupal_attributes($region_attributes_array[$name])?>>
+        <?php print $item ?>
+      </div>
     <?php endif; ?>
-    <?php if (!empty($content['column_two'])): ?>
-    <div class="panels-region--column-two">
-      <?php print $content['column_two']; ?>
-    </div>
-    <?php endif; ?>
-    <?php if (!empty($content['column_three'])): ?>
-    <div class="panels-region--column-three">
-      <?php print $content['column_three']; ?>
-    </div>
-    <?php endif; ?>
-    <?php if (!empty($content['column_four'])): ?>
-    <div class="panels-region--column-four">
-      <?php print $content['column_four']; ?>
-    </div>
-    <?php endif; ?>
+  <?php endforeach; ?>
   </div>
 </div>

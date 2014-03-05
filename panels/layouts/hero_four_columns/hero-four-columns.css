@@ -17,63 +17,47 @@
 }
 
 @media (min-width: 44em) {
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-one {
-    width: 48.93617%;
+  .panel-display--hero-four-column .panels-region--columns-wrapper__two .panels-region,
+  .panel-display--hero-four-column .panels-region--columns-wrapper__four .panels-region {
+    width: 46.66667%;
+    clear: right;
     float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-two {
-    width: 48.93617%;
-    float: right;
     margin-left: 0;
-    margin-right: 0;
-    clear: none;
+    margin-right: 6.66667%;
   }
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-three {
-    width: 48.93617%;
+  .panel-display--hero-four-column .panels-region--columns-wrapper__two .panels-region:last-child,
+  .panel-display--hero-four-column .panels-region--columns-wrapper__four .panels-region:last-child {
+    width: 46.66667%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper__three .panels-region {
+    width: 31.42857%;
+    clear: right;
     float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-    clear: both;
-  }
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-four {
-    width: 48.93617%;
-    float: right;
     margin-left: 0;
+    margin-right: 2.85714%;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper__three .panels-region:last-child {
+    width: 31.42857%;
+    clear: right;
+    float: right;
     margin-right: 0;
-    clear: none;
   }
 }
 @media (min-width: 70em) {
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-one {
-    width: 23.40426%;
+  .panel-display--hero-four-column .panels-region--columns-wrapper__four .panels-region {
+    width: 22.58065%;
+    clear: right;
     float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-two {
-    width: 23.40426%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 25.53191%;
-    clear: none;
-  }
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-three {
-    width: 23.40426%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 51.06383%;
-    clear: none;
-  }
-  .panel-display--hero-four-column .panels-region--columns-wrapper .panels-region--column-four {
-    width: 23.40426%;
-    float: right;
     margin-left: 0;
+    margin-right: 3.22581%;
+  }
+  .panel-display--hero-four-column .panels-region--columns-wrapper__four .panels-region:last-child {
+    width: 22.58065%;
+    clear: right;
+    float: right;
     margin-right: 0;
-    clear: none;
   }
 }
