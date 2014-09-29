@@ -1,0 +1,27 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+
+@import "../_grid.scss";
+
+@include breakpoint($tab, true) {
+  .content-sidebar-region--sidebar-section-one {
+    @include isolation-span(6, 1, 'left');
+  }
+  .content-sidebar-region--sidebar-section-two {
+    @include isolation-span(6, 7, 'right');
+  }
+}
+@include breakpoint($desk, true) {
+  .content-sidebar-region--content {
+    @include grid-span(7.5, 1.5);
+  }
+  .content-sidebar-region--sidebar-section-one {
+    @include grid-span(3.5, 9.5);
+  }
+  .content-sidebar-region--sidebar-section-two {
+    @include isolation-span(3.5, 9.5, 'right');
+  }
+}
