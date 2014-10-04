@@ -1,0 +1,27 @@
+@media (min-width: 44em) {
+  .split-page--split {
+    *zoom: 1;
+  }
+  .split-page--split:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .split-page--split .panels-region {
+    overflow: hidden;
+  }
+  .split-page--split .panels-region:first-child {
+    width: 48.93617%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  .split-page--split .panels-region:last-child {
+    width: 48.93617%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}

@@ -1,0 +1,23 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+
+@import "../_grid.scss";
+
+
+@include breakpoint($tab, true) {
+  .split-page--split {
+    @include pie-clearfix;
+    .panels-region {
+      overflow: hidden;
+    }
+    .panels-region:first-child {
+      @include grid-span(6, 1);
+    }
+    .panels-region:last-child {
+      @include grid-span(6, 7);
+    }
+  }
+}
